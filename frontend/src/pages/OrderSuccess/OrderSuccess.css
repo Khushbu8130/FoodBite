@@ -1,0 +1,98 @@
+.order-success-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff7ed, #ffe0b2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.order-success-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+}
+
+.success-icon {
+  margin: 0 auto 20px;
+}
+
+.success-title {
+  color: #16a34a;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.back-home-btn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #ff7f2a;
+}
+
+/* 🚴 Fun animated delivery bike */
+.delivery-bike {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  margin: 0 auto 30px;
+  animation: moveBike 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveBike {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+.wheel {
+  width: 24px;
+  height: 24px;
+  background: #222;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+.wheel.front {
+  right: 0;
+}
+
+.wheel.back {
+  left: 0;
+}
+
+.bike-body {
+  width: 80px;
+  height: 10px;
+  background: #ff6600;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

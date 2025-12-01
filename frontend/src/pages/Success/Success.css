@@ -1,0 +1,131 @@
+.success-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fff7ef 0%, #ffe1c1 100%);
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem;
+}
+
+.success-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+.success-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.checkmark {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: inline-block;
+}
+
+.checkmark-circle {
+  stroke: #ff6600;
+  stroke-width: 3;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-linecap: round;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark-check {
+  transform-origin: 50% 50%;
+  stroke: #ff6600;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.4s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+}
+
+.success-title {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.success-text {
+  color: #555;
+  margin: 0.5rem 0 1.5rem 0;
+  font-size: 1rem;
+}
+
+.success-details {
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.success-btn {
+  background: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.success-btn:hover {
+  background: #e55d00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 102, 0, 0.25);
+}
+
+/* Animations */
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .success-card {
+    padding: 1.8rem;
+  }
+
+  .success-title {
+    font-size: 1.5rem;
+  }
+
+  .success-text {
+    font-size: 0.95rem;
+  }
+
+  .success-btn {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.2rem;
+  }
+}
